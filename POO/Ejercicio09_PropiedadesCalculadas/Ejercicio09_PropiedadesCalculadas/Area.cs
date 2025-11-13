@@ -17,7 +17,11 @@ namespace Ejercicio09_PropiedadesCalculadas
             Base = basee;
             Altura = altura;
         }
-        public double Areaa => Base * Altura;
+        public double Areaa
+        {
+            get { return Base * Altura; }
+        }
+
         public void mostrar()
         {
             Console.WriteLine("El area es de "+ Areaa);
